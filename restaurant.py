@@ -95,7 +95,7 @@ while True:
                 price_per_guest3 = total_price/number_to_split
                 print(f'Your total bill is {total_price}\n'
                       f'Each guest has to pay {price_per_guest3}'
-                      f'Thank you for not leaving a tip')
+                      f'Thank you for not leaving a tip ')
         else:
             print('Invalid answer, Try again')
     elif payment_answer == '2':
