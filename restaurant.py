@@ -62,7 +62,7 @@ while True:
                 price_per_guest3 = total_price/no_of_guests
                 print(f'Your total bill is {total_price}\n'
                       f'Each guest has to pay {price_per_guest3}'
-                      f'Thank you for not leaving a tip stingy preeqs')
+                      f'Thank you for not leaving a tip')
         elif split_type == '2':
             number_to_split  = int(input('How many people do you want to split among?: '))
             split_type_custom_guest = input(f'Would you like to leave a tip?\n'
@@ -95,7 +95,7 @@ while True:
                 price_per_guest3 = total_price/number_to_split
                 print(f'Your total bill is {total_price}\n'
                       f'Each guest has to pay {price_per_guest3}'
-                      f'Thank you for not leaving a tip stingy preeqs')
+                      f'Thank you for not leaving a tip')
         else:
             print('Invalid answer, Try again')
     elif payment_answer == '2':
