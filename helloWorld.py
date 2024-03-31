@@ -1,3 +1,4 @@
 string = 'hello world'
 string2 = 'git is awesome'
-print(string2.capitalize())
+string3 = input('Enter your word: ')
+print(string3.capitalize())
