@@ -20,7 +20,8 @@ print(f'You have spent a total of £{total_price}')
 MENU = (f'How would you like top pay this bill?\n'
         f'\nPress 1 to split the bill\n'
         f'Press 2 to make to a single payment\n'
-        f'Enter 3 to quit program')
+        f'Enter 3 to quit program\n'
+        f'Enter 3 to quit program\n')
 
 # constant percentages
 percent10 = ((10/100)*total_price) 
@@ -52,6 +53,28 @@ while True:
                                         f'10% = {percent10}\n'
                                         f'15% = {percent15}\n'
                                         f'20% = {percent20}\n')
+#exception-handling
+                    try: #exception handling
+                        tip_percent = int(tip_percent)
+                        tip_amount = (tip_percent/100)*total_amount  
+                        total_amount = tip_amount + total_price
+                        price_per_guest1 = total_amount/no_of_guests
+                        print (f'Your final bill is £{total_amount}\n'
+                            f'Each guest has to pay £{price_per_guest1}\n'
+                            f'Thank you for visiting. See you again!')
+                    except ValueError: #exception handling
+                        print('Please enter a valid number')
+                    # specific payment amount
+                elif tip_type == '2':
+                    tip_spec_amount = input('How much would you like to pay?\n')
+                    try: #exception handling
+                        total_amount_spec = int(tip_spec_amount) + total_price
+                        price_per_guest2 = total_amount_spec/no_of_guests
+                        print (f'Your final bill is £{total_amount_spec}\n'
+                            f'Each user has to pay £{price_per_guest2}\n'
+                            f'Thank you for visiting. See you again')
+                    except ValueError:
+                        print('Please enter a valid number')
                     tip_percent = int(tip_percent)
                     tip_amount = (tip_percent/100)*total_amount  
                     total_amount = tip_amount + total_price
