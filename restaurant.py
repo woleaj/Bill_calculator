@@ -20,7 +20,7 @@ print(f'You have spent a total of £{total_price}')
 MENU = (f'How would you like top pay this bill?\n'
         f'\nPress 1 to split the bill\n'
         f'Press 2 to make to a single payment\n'
-        f'Enter 3 to quit program')
+        f'Enter 3 to quit program\n')
 
 # constant percentages
 percent10 = ((10/100)*total_price) 
